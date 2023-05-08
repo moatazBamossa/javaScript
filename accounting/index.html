@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <title>Accounting</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Accounting system</h1>
+            <h3>sub title</h3>
+        </div>
+        <div class="data">
+          <input type="text" class="input" id="name" name="name" placeholder="Name" required="" data-error="Please enter your name">
+          <div class="prices">
+            <input type="text" onkeyup="totalPrice()" class=" input" id="price" name="price" placeholder="price" required="" data-error="Please enter the price">
+            <input type="text" onkeyup="totalPrice()" class="input" id="taxes" name="taxes" placeholder="taxes" required="" data-error="Please enter the taxes">
+            <input type="text" onkeyup="totalPrice()" class="input" id="ads" name="ads" placeholder="ads" required="" data-error="Please enter price of ads">
+            <input type="text" onkeyup="totalPrice()" class="input" id="discount" name="discount" placeholder="discount" required="" data-error="Please enter discount">
+            <small class="total" id="totalNumber"></small>
+          </div>
+          <input type="text" id="count" class="count input" name="count" placeholder="count" required="" data-error="Please enter count">
+          <input type="text" id="category" class="category input" name="category" placeholder="category" required="" data-error="Please enter category">
+          <button class="btn" id="btnCreate"> Create </button>
+          <input type="text"  onkeyup="search(this.value)" id="search" class="search input" name="search" placeholder="search by name or category" required="" data-error="Please enter search world">
+          <div class="btnSearch">
+            <button class="btn" id="btnSearch">Search</button>
+          </div>
+          <div class="btnDeleteAll" id="btnDeleteAll">
+
+          </div>
+          <div class="datatable">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>COUNT</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+              </tr>
+              <tbody id="tbody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

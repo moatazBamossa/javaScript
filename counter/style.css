@@ -1,0 +1,13 @@
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+.btn {
+    padding: 1rem;
+    font-size: 18px;
+}
+#counter {
+    font-size: 3rem;
+}
