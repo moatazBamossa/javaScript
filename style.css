@@ -13,14 +13,15 @@ h1 {
 }
 .container .content {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
   margin: auto 2rem;
 }
 .container .content .card {
   box-shadow: 1px 1px 1px 1px gray;
   padding: 1rem;
+  width: 30%;
 }
 .container .content .card .image{
   height: 250px;
